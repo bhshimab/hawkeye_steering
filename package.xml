@@ -1,0 +1,26 @@
+<package format="3">
+  <name>hawkeye_steering</name>
+  <version>0.0.0</version>
+  <description>Adapted from rqt_robot_steering for Hawkeye</description>
+  <maintainer email="bshimabukuro@ucdavis.edu">Brian Shimabukuro</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">https://github.com/bhshimab/hawkeye_steering</url>
+
+  <author>Brian Shimabukuro</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend version_gte="0.2.19">python_qt_binding</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 2">python-rospkg</exec_depend>
+  <exec_depend condition="$ROS_PYTHON_VERSION == 3">python3-rospkg</exec_depend>
+  <exec_depend>rostopic</exec_depend>
+  <exec_depend>rqt_gui</exec_depend>
+  <exec_depend>rqt_gui_py</exec_depend>
+
+  <export>
+    <rqt_gui plugin="${prefix}/plugin.xml"/>
+  </export>
+</package>

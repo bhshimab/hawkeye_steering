@@ -1,0 +1,17 @@
+<library path="src">
+  <class name="HawkeyeSteering" type="hawkeye_steering.robot_steering.HawkeyeSteering" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      Adapted from rqt_robot_steering
+    </description>
+    <qtgui>
+      <group>
+        <label>Robot Tools</label>
+        <icon type="theme">folder</icon>
+        <statustip>Plugins related to robot tools.</statustip>
+      </group>
+      <label>Robot Steering</label>
+      <icon type="theme">input-gaming</icon>
+      <statustip>A Python GUI plugin for steering a robot using geometry_msgs/Twist messages.</statustip>
+    </qtgui>
+  </class>
+</library>
